@@ -1,0 +1,90 @@
+.katalog-container {
+  margin: 40px 200px;
+  padding: 40px 0;
+}
+
+.katalog-header {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 40px;
+}
+
+.katalog-subtitle {
+  color: rgba(69, 69, 69, 1);
+  font-size: 36px;
+  font-weight: 700;
+  margin: 0;
+}
+
+.katalog-main {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.categories-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, auto);
+  gap: 20px;
+}
+
+.category-card {
+  background-color: rgba(242, 242, 242, 1);
+  border-radius: 20px;
+  padding: 30px;
+}
+
+.category-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+}
+
+.category-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.category-title {
+  color: rgba(69, 69, 69, 1);
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.category-link {
+  color: rgba(69, 69, 69, 1);
+  font-size: 15px;
+  font-weight: 500;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.category-icon {
+  width: 120px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.category-icon img {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.hammaKatalog {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 14px 47px;
+  border-radius: 100px;
+  color: rgba(69, 69, 69, 1);
+  background: none;
+  border: 1px solid rgba(69, 69, 69, 1);
+}

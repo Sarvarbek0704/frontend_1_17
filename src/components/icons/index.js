@@ -1,0 +1,10 @@
+export { default as CatalogIcon } from "./src/Catalog.icon";
+export { default as SearchIcon } from "./src/Search.icon";
+export { default as HeartIcon } from "./src/Heart.icon";
+export { default as NetworkIcon } from "./src/Network.icon";
+export { default as CartIcon } from "./src/Cart.icon";
+export { default as SlideIcon } from "./src/Slide";
+export { default as MedalIcon } from "./src/Medal.icon";
+export { default as TangaIcon } from "./src/Tanga.icon";
+export { default as DostavkaIcon } from "./src/Dostavka.icon";
+export { default as YuklarIcon } from "./src/Yuklar.icon";
