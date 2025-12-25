@@ -14,43 +14,31 @@ function Katalog() {
       title: "Люстры",
       link: "От 540₽ →",
       icon: katalog1,
-      row: 1,
-      col: 1,
     },
     {
       title: "Торшеры",
       link: "От 540₽ →",
       icon: katalog2,
-      row: 1,
-      col: 2,
     },
     {
       title: "Светильники",
       link: "От 540₽ →",
       icon: katalog3,
-      row: 2,
-      col: 1,
     },
     {
       title: "Настольные лампы",
       link: "От 540₽ →",
       icon: katalog4,
-      row: 2,
-      col: 2,
     },
     {
       title: "Бра",
       link: "От 540₽ →",
       icon: katalog5,
-      row: 3,
-      col: 1,
     },
     {
       title: "Споты",
       link: "От 540₽ →",
       icon: katalog6,
-      row: 3,
-      col: 2,
     },
   ];
 
@@ -66,14 +54,7 @@ function Katalog() {
       <div className="katalog-main">
         <div className="categories-grid">
           {categories.map((category, index) => (
-            <div
-              key={index}
-              className="category-card"
-              style={{
-                gridRow: category.row,
-                gridColumn: category.col,
-              }}
-            >
+            <div key={index} className="category-card">
               <div className="category-content">
                 <div className="category-text">
                   <h3 className="category-title">{category.title}</h3>

@@ -4,6 +4,29 @@ import catalogIcon from "../../assets/catalog-icon.png";
 import { DostavkaIcon, MedalIcon, TangaIcon, YuklarIcon } from "../icons";
 
 function Reasons() {
+  const reasonsData = [
+    {
+      icon: <MedalIcon />,
+      title: "Только проверенные бренды",
+      description: "Бренды, проверенные временем и качеством",
+    },
+    {
+      icon: <TangaIcon />,
+      title: "Самые низкие цены",
+      description: "Ниже не будет нигде",
+    },
+    {
+      icon: <DostavkaIcon />,
+      title: "Быстрая доставка",
+      description: "Доставляем по всей РФ за 1-10 дней",
+    },
+    {
+      icon: <YuklarIcon />,
+      title: "Большой ассортимент",
+      description: "Более 1000 товаров",
+    },
+  ];
+
   return (
     <div className="reasons">
       <div className="reasonsHeader">
@@ -13,26 +36,15 @@ function Reasons() {
         </button>
       </div>
       <div className="cards">
-        <div className="card">
-          <MedalIcon className="icons" />
-          <h3>Только проверенные бренды</h3>
-          <p>Бренды, проверенные временем и качеством</p>
-        </div>
-        <div className="card">
-          <TangaIcon className="icons" />
-          <h3>Самые низкие цены</h3>
-          <p>Ниже не будет нигде</p>
-        </div>
-        <div className="card">
-          <DostavkaIcon className="icons" />
-          <h3>Быстрая доствка</h3>
-          <p>Доставляем по всей РФ за 1-10 дней</p>
-        </div>
-        <div className="card">
-          <YuklarIcon className="icons" />
-          <h3>Большой ассортимент</h3>
-          <p>Более 1000 товаров</p>
-        </div>
+        {reasonsData.map((reason, index) => (
+          <div className="card" key={index}>
+            <div className="icons">{reason.icon}</div>
+            <div className="card-text">
+              <h3>{reason.title}</h3>
+              <p>{reason.description}</p>
+            </div>
+          </div>
+        ))}
       </div>
     </div>
   );

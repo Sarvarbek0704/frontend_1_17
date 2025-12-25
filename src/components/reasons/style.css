@@ -7,7 +7,14 @@
 }
 
 .icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 80px;
+  height: 80px;
   background-color: rgba(69, 69, 69, 1);
+  padding: 10px;
+  border-radius: 15px;
 }
 
 .reasonsHeader {
@@ -20,6 +27,27 @@
   color: rgba(69, 69, 69, 1);
   font-size: 40px;
   font-weight: 700;
+  margin: 0;
+}
+
+.hammaKatalog {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  padding: 14px 47px;
+  border-radius: 100px;
+  color: rgba(69, 69, 69, 1);
+  background: none;
+  border: 1px solid rgba(69, 69, 69, 1);
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 500;
+  white-space: nowrap;
+}
+
+.hammaKatalog img {
+  width: 16px;
+  height: 16px;
 }
 
 .cards {
@@ -28,4 +56,183 @@
   align-items: stretch;
   justify-content: space-between;
   width: 100%;
+}
+
+.card {
+  align-items: start;
+  width: 300px;
+  border: 1px solid rgba(217, 217, 217, 1);
+  padding: 50px 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 50px;
+  border-radius: 20px;
+  background: white;
+}
+
+.card-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+.card-text h3 {
+  font-size: 20px;
+  font-weight: 700;
+  color: rgba(69, 69, 69, 1);
+  margin: 0;
+}
+
+.card-text p {
+  font-size: 16px;
+  font-weight: 400;
+  color: rgba(69, 69, 69, 1);
+  margin: 0;
+}
+
+/* Tablet responsive (1024px gacha) */
+@media screen and (max-width: 1024px) {
+  .reasons {
+    margin: 40px 100px;
+    padding: 30px 0;
+  }
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 15px;
+  }
+
+  .card {
+    width: 100%;
+    padding: 40px 30px;
+    gap: 40px;
+  }
+
+  .card-text {
+    gap: 20px;
+  }
+
+  .reasonsHeader h1 {
+    font-size: 36px;
+  }
+}
+
+/* Tablet (768px gacha) */
+@media screen and (max-width: 768px) {
+  .reasons {
+    margin: 30px 50px;
+    padding: 25px 0;
+  }
+
+  .reasonsHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 20px;
+  }
+
+  .reasonsHeader h1 {
+    font-size: 32px;
+    width: 100%;
+  }
+
+  .hammaKatalog {
+    align-self: center; /* Tugmani markazga joylashtiramiz */
+    padding: 12px 30px;
+  }
+
+  .cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+  }
+
+  .card {
+    padding: 30px 20px;
+    gap: 30px;
+  }
+
+  .icons {
+    width: 70px;
+    height: 70px;
+  }
+
+  .card-text h3 {
+    font-size: 18px;
+  }
+
+  .card-text p {
+    font-size: 15px;
+  }
+}
+
+/* Mobile (480px gacha) */
+@media screen and (max-width: 480px) {
+  .reasons {
+    margin: 20px 15px;
+    padding: 20px 0;
+  }
+
+  .reasonsHeader h1 {
+    font-size: 28px;
+    text-align: center;
+  }
+
+  .hammaKatalog {
+    width: 100%;
+    justify-content: center;
+    padding: 12px;
+    margin-top: 10px;
+  }
+
+  .cards {
+    grid-template-columns: 1fr; /* Mobile'da 1 ustun */
+    grid-template-rows: repeat(4, auto);
+    gap: 10px;
+  }
+
+  .card {
+    padding: 25px 20px;
+    gap: 25px;
+  }
+
+  .icons {
+    width: 60px;
+    height: 60px;
+  }
+
+  .card-text h3 {
+    font-size: 18px;
+  }
+
+  .card-text p {
+    font-size: 14px;
+  }
+}
+
+/* Small Mobile (375px gacha) */
+@media screen and (max-width: 375px) {
+  .reasonsHeader h1 {
+    font-size: 24px;
+  }
+
+  .card {
+    padding: 20px 15px;
+    gap: 20px;
+  }
+
+  .icons {
+    width: 50px;
+    height: 50px;
+  }
+
+  .card-text h3 {
+    font-size: 16px;
+  }
+
+  .card-text p {
+    font-size: 13px;
+  }
 }

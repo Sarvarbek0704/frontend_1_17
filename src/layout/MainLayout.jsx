@@ -5,6 +5,10 @@ import Footer from "./Footer";
 import Slide from "../components/slide";
 import Katalog from "../components/Katalog";
 import Reasons from "../components/reasons";
+import Products from "../components/products";
+import Brands from "../components/brands/Brands";
+import Blog from "../components/blog";
+import Text from "../components/text";
 
 function MainLayout() {
   return (
@@ -14,6 +18,10 @@ function MainLayout() {
         <Slide />
         <Katalog />
         <Reasons />
+        <Products />
+        <Brands />
+        <Blog />
+        <Text />
       </div>
       <Footer />
     </LayoutWrapper>

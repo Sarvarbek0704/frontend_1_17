@@ -1,51 +1,213 @@
 * {
   box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
 .slide {
   position: relative;
   background-color: rgba(242, 242, 242, 1);
-  border-radius: 50px;
-  margin: 30px 100px;
+  border-radius: 30px;
+  margin: 20px 15px;
+  overflow: hidden;
+}
+
+/* Mobile version (default) */
+.slide-content {
   display: flex;
-  justify-content: space-between;
-  padding: 0 150px;
-  gap: 200px;
+  flex-direction: column;
+  padding: 30px 20px;
+  gap: 20px;
 }
 
-.slide img {
-  padding: 0;
-  margin: 0;
+.image-container {
+  position: relative;
   width: 100%;
-  max-width: 450px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  order: 1; /* Rasm birinchi bo'ladi */
 }
 
-.slide .texts {
-  padding: 50px 0;
+.slide-image {
+  width: 100%;
+  max-width: 250px;
+  height: auto;
+  object-fit: contain;
+}
+
+.slideIcon {
+  position: absolute;
+  bottom: -10px;
+  right: 20px;
+  width: 70px !important;
+  height: auto;
+}
+
+.texts {
   display: flex;
   flex-direction: column;
   align-items: center;
   color: rgba(69, 69, 69, 1);
-  width: 600px;
-  font-size: 50px;
-  line-height: 1.2;
+  width: 100%;
+  order: 2; /* Text ikkinchi bo'ladi */
+  text-align: center;
+  padding: 10px 0;
+}
+
+.main-text {
+  font-size: 22px;
+  line-height: 1.3;
+  font-weight: 600;
+  margin-bottom: 15px;
+  width: 100%;
 }
 
 .fevral {
-  align-self: flex-start;
   color: rgba(255, 255, 255, 1);
   background-color: rgba(69, 69, 69, 1);
   border-radius: 100px;
+  font-size: 18px;
+  padding: 8px 25px;
   display: inline-block;
-  margin-top: 20px;
-  font-size: 40px;
-  padding: 10px 10px;
+  font-weight: 600;
 }
 
-.slideIcon {
-  top: 330px;
-  right: 40px;
-  position: absolute;
-  width: 108px !important;
-  height: 10px;
+/* Small Mobile (320px - 375px) */
+@media screen and (max-width: 375px) {
+  .slide {
+    margin: 15px 10px;
+    border-radius: 25px;
+  }
+
+  .slide-content {
+    padding: 20px 15px;
+    gap: 15px;
+  }
+
+  .main-text {
+    font-size: 20px;
+  }
+
+  .fevral {
+    font-size: 16px;
+    padding: 6px 20px;
+  }
+
+  .slide-image {
+    max-width: 200px;
+  }
+
+  .slideIcon {
+    width: 60px !important;
+    bottom: -8px;
+    right: 15px;
+  }
+}
+
+/* Medium Mobile (376px - 425px) */
+@media screen and (min-width: 376px) and (max-width: 425px) {
+  .slide {
+    margin: 18px 12px;
+  }
+
+  .slide-content {
+    padding: 25px 18px;
+  }
+
+  .main-text {
+    font-size: 24px;
+  }
+
+  .fevral {
+    font-size: 19px;
+  }
+
+  .slide-image {
+    max-width: 220px;
+  }
+}
+
+/* Large Mobile (426px - 767px) */
+@media screen and (min-width: 426px) and (max-width: 767px) {
+  .slide {
+    margin: 25px 20px;
+    border-radius: 35px;
+  }
+
+  .slide-content {
+    padding: 35px 25px;
+    gap: 25px;
+  }
+
+  .main-text {
+    font-size: 26px;
+    margin-bottom: 20px;
+  }
+
+  .fevral {
+    font-size: 20px;
+    padding: 10px 30px;
+  }
+
+  .slide-image {
+    max-width: 250px;
+  }
+
+  .slideIcon {
+    width: 75px !important;
+    bottom: -12px;
+    right: 25px;
+  }
+}
+
+/* Tablet uchun (768px va undan katta) - Desktop versiyaga o'tish */
+@media screen and (min-width: 768px) {
+  .slide {
+    border-radius: 50px;
+    margin: 30px 100px;
+  }
+
+  .slide-content {
+    flex-direction: row; /* Desktop'da gorizontal qilamiz */
+    justify-content: space-between;
+    padding: 0 150px;
+    gap: 200px;
+  }
+
+  .image-container {
+    order: 2; /* Desktop'da rasm o'ngda */
+    width: auto;
+  }
+
+  .slide-image {
+    max-width: 450px;
+  }
+
+  .texts {
+    order: 1; /* Desktop'da text chapda */
+    text-align: left;
+    align-items: flex-start;
+    padding: 50px 0;
+    width: 600px;
+  }
+
+  .main-text {
+    font-size: 50px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+  }
+
+  .fevral {
+    align-self: flex-start;
+    font-size: 40px;
+    padding: 10px 10px;
+  }
+
+  .slideIcon {
+    top: 330px;
+    right: 40px;
+    bottom: auto;
+    width: 108px !important;
+  }
 }
