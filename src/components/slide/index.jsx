@@ -1,22 +1,31 @@
 import React from "react";
-import "./style.css";
 import slideImage from "../../assets/slideImage.png";
 import slideIcon from "../../assets/slideIcon.png";
+import {
+  SlideContainer,
+  SlideContent,
+  ImageContainer,
+  SlideImage,
+  SlideIcon,
+  TextsContainer,
+  MainText,
+  Fevral,
+} from "./Slide.styled";
 
 function Slide() {
   return (
-    <div className="slide">
-      <div className="slide-content">
-        <div className="image-container">
-          <img src={slideImage} alt="slide image" className="slide-image" />
-          <img src={slideIcon} alt="slide icon" className="slideIcon" />
-        </div>
-        <div className="texts">
-          <h1 className="main-text">Скидка 15% на все подвесные светильники</h1>
-          <p className="fevral">до 5 февраля</p>
-        </div>
-      </div>
-    </div>
+    <SlideContainer>
+      <SlideContent>
+        <ImageContainer>
+          <SlideImage src={slideImage} alt="slide image" />
+          <SlideIcon src={slideIcon} alt="slide icon" />
+        </ImageContainer>
+        <TextsContainer>
+          <MainText>Скидка 15% на все подвесные светильники</MainText>
+          <Fevral>до 5 февраля</Fevral>
+        </TextsContainer>
+      </SlideContent>
+    </SlideContainer>
   );
 }
 

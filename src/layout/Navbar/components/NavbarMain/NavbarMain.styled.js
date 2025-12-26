@@ -90,6 +90,7 @@ export const NavigationItems = styled.div`
   }
 
   .item {
+    text-decoration: none;
     display: flex;
     flex-direction: column;
     align-items: center;

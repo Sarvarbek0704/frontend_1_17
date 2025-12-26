@@ -267,3 +267,7 @@
     grid-template-columns: repeat(5, 1fr);
   }
 }
+
+.item {
+  text-decoration: none;
+}

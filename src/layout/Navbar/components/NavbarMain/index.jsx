@@ -14,7 +14,7 @@ import {
 } from "./NavbarMain.styled";
 import { Link } from "react-router-dom";
 
-function NavbarMain(props) {
+function NavbarMain() {
   return (
     <NavMainWrapper>
       <img src="/logo.svg" alt="Logo" />

@@ -7,7 +7,7 @@ import {
     PhoneLink 
 } from './NavbarTop.styled';
 
-function NavbarTop(props) {
+function NavbarTop() {
     return (
         <NavTopWrapper>
             <NavTopSide>

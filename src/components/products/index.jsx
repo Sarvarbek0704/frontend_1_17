@@ -2,6 +2,8 @@ import React from "react";
 import "./products.css";
 import lyustra from "../../assets/lyustra.png";
 import { CartIcon } from "../icons";
+import catalogIcon from "../../assets/catalog-icon.png";
+import { Link } from "react-router-dom";
 
 function Products() {
   const products = Array(8).fill({
@@ -13,7 +15,14 @@ function Products() {
 
   return (
     <div className="manage-product-container">
-      <p>Популярные товары</p>
+      <div className="katalog-header">
+        <h2 className="katalog-subtitle">Популярные товары</h2>
+        <Link to="/all-products" className="item">
+          <button className="hammaKatalog">
+            Все товары <img src={catalogIcon} alt="catalogIcon" />
+          </button>
+        </Link>
+      </div>
       <div className="product-cards">
         {products.map((product, index) => (
           <div className="product-card" key={index}>

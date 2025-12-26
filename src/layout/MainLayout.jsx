@@ -13,16 +13,14 @@ import Text from "../components/text";
 function MainLayout() {
   return (
     <LayoutWrapper>
-      <div>
-        <Navbar />
-        <Slide />
-        <Katalog />
-        <Reasons />
-        <Products />
-        <Brands />
-        <Blog />
-        <Text />
-      </div>
+      <Navbar />
+      <Slide />
+      <Katalog />
+      <Reasons />
+      <Products />
+      <Brands />
+      <Blog />
+      <Text />
       <Footer />
     </LayoutWrapper>
   );

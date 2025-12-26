@@ -12,7 +12,6 @@
   overflow: hidden;
 }
 
-/* Mobile version (default) */
 .slide-content {
   display: flex;
   flex-direction: column;
@@ -26,7 +25,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  order: 1; /* Rasm birinchi bo'ladi */
+  order: 1;
 }
 
 .slide-image {
@@ -50,7 +49,7 @@
   align-items: center;
   color: rgba(69, 69, 69, 1);
   width: 100%;
-  order: 2; /* Text ikkinchi bo'ladi */
+  order: 2;
   text-align: center;
   padding: 10px 0;
 }
@@ -73,7 +72,6 @@
   font-weight: 600;
 }
 
-/* Small Mobile (320px - 375px) */
 @media screen and (max-width: 375px) {
   .slide {
     margin: 15px 10px;
@@ -105,7 +103,6 @@
   }
 }
 
-/* Medium Mobile (376px - 425px) */
 @media screen and (min-width: 376px) and (max-width: 425px) {
   .slide {
     margin: 18px 12px;
@@ -128,7 +125,6 @@
   }
 }
 
-/* Large Mobile (426px - 767px) */
 @media screen and (min-width: 426px) and (max-width: 767px) {
   .slide {
     margin: 25px 20px;
@@ -161,7 +157,6 @@
   }
 }
 
-/* Tablet uchun (768px va undan katta) - Desktop versiyaga o'tish */
 @media screen and (min-width: 768px) {
   .slide {
     border-radius: 50px;
@@ -169,14 +164,14 @@
   }
 
   .slide-content {
-    flex-direction: row; /* Desktop'da gorizontal qilamiz */
+    flex-direction: row;
     justify-content: space-between;
     padding: 0 150px;
     gap: 200px;
   }
 
   .image-container {
-    order: 2; /* Desktop'da rasm o'ngda */
+    order: 2;
     width: auto;
   }
 
@@ -185,7 +180,7 @@
   }
 
   .texts {
-    order: 1; /* Desktop'da text chapda */
+    order: 1;
     text-align: left;
     align-items: flex-start;
     padding: 50px 0;

@@ -4,7 +4,13 @@ import NavbarMain from "./components/NavbarMain";
 
 import { NavbarWrapper } from "./Navbar.styled";
 import HamburgerIcon from "../../components/icons/src/Hamburger.icon";
-import { CartIcon, CatalogIcon, CloseIcon, HeartIcon, SearchIcon } from "../../components";
+import {
+  CartIcon,
+  CatalogIcon,
+  CloseIcon,
+  HeartIcon,
+  SearchIcon,
+} from "../../components";
 
 function Navbar() {
   const mobNavRef = useRef(null);

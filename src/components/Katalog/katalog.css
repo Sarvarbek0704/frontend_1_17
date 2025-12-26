@@ -93,9 +93,6 @@
   font-weight: 500;
 }
 
-/* Mobile Responsive Styles */
-
-/* Tablet (768px - 1023px) */
 @media screen and (max-width: 1023px) {
   .katalog-container {
     margin: 30px 50px;
@@ -108,7 +105,6 @@
     gap: 15px;
   }
 
-  /* Grid itemsni qayta joylashtirish */
   .category-card:nth-child(1) {
     grid-row: 1;
     grid-column: 1;
@@ -156,7 +152,6 @@
   }
 }
 
-/* Mobile (480px - 767px) */
 @media screen and (max-width: 767px) {
   .katalog-container {
     margin: 25px 20px;
@@ -204,7 +199,6 @@
   }
 }
 
-/* Small Mobile (320px - 479px) */
 @media screen and (max-width: 479px) {
   .katalog-container {
     margin: 20px 15px;
@@ -228,7 +222,6 @@
     gap: 10px;
   }
 
-  /* Mobile'da bir ustun */
   .category-card:nth-child(1) {
     grid-row: 1;
     grid-column: 1;

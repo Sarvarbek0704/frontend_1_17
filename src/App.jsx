@@ -2,6 +2,7 @@ import React from "react";
 import MainLayout from "./layout/MainLayout";
 import { Route, Routes } from "react-router-dom";
 import Basket from "./components/basket";
+import AllProducts from "./components/allProducts";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
         }
       />
       <Route path="/basket" element={<Basket></Basket>} />
+      <Route path="/all-products" element={<AllProducts></AllProducts>} />
     </Routes>
   );
 }
