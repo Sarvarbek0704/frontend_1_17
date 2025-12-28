@@ -27,6 +27,10 @@ export const SearchWrapper = styled.div`
   width: 100%;
   min-width: 300px;
 
+  .link {
+    text-decoration: none;
+  }
+
   span {
     font-weight: 100;
   }

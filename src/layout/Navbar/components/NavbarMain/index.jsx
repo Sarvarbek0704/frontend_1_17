@@ -19,10 +19,13 @@ function NavbarMain() {
     <NavMainWrapper>
       <img src="/logo.svg" alt="Logo" />
       <SearchWrapper>
-        <button className="catalog-button">
-          <CatalogIcon />
-          <span>Каталог</span>
-        </button>
+        <Link to="/catalog" className="link">
+          <button className="catalog-button">
+            <CatalogIcon />
+            <span>Каталог</span>
+          </button>
+        </Link>
+
         <div className="input-wrapper">
           <input type="text" placeholder="Поиск по товарам" />
           <span className="search-icon-wrap">

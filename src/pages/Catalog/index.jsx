@@ -15,16 +15,18 @@ import cat10 from "../../assets/katalog10.png";
 import cat11 from "../../assets/katalog11.png";
 import Navbar from "../../layout/Navbar";
 import Footer from "../../layout/Footer";
+import { BreadcrumbLink } from "../ProductDetail/ProductDetail.styled";
+import { BreadcrumbSpan } from "../AboutUs/AboutUs.styled";
+import Brands from "../../components/brands/Brands";
+import Blog from "../../components/blog";
 
 function Catalog() {
   return (
     <div>
       <Navbar />
       <CatalogWrapper>
-        <p className={"breadcrumb"}>
-          <Link to={"/"}>Главная</Link>
-          <span>Каталог</span>
-        </p>
+        <BreadcrumbLink href="/">Главная {" >"}</BreadcrumbLink>
+        <BreadcrumbSpan> Каталог</BreadcrumbSpan>
 
         <div className="catalogGrid">
           {[
@@ -62,6 +64,8 @@ function Catalog() {
           ))}
         </div>
       </CatalogWrapper>
+      <Brands />
+      <Blog />
       <Footer />
     </div>
   );

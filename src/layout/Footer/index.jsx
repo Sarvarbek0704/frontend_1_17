@@ -26,8 +26,8 @@ function Footer() {
 
         <PaymentLogosImg src={PaymentLogos} alt="Payments" />
 
-        <FooterLink href="/">Политика конфиденциальности</FooterLink>
-        <FooterLink href="/">Пользовательское соглашение</FooterLink>
+        <FooterLink href="#">Политика конфиденциальности</FooterLink>
+        <FooterLink href="#">Пользовательское соглашение</FooterLink>
         <VkIconsContainer>
           <VkIcon />
           <VkIcon />
@@ -48,17 +48,17 @@ function Footer() {
       <FooterSectionThree>
         <FooterTitle>Товары</FooterTitle>
         <ProductsGrid>
-          <ProductLink href="">Люстры</ProductLink>
-          <ProductLink href="">Споты</ProductLink>
-          <ProductLink href="">Светильники</ProductLink>
-          <ProductLink href="">Трековые светильники</ProductLink>
-          <ProductLink href="">Бра</ProductLink>
-          <ProductLink href="">Уличные светильники</ProductLink>
-          <ProductLink href="">Торшеры</ProductLink>
-          <ProductLink href="">Технические светильники</ProductLink>
-          <ProductLink href="">Комплектуюшие</ProductLink>
-          <ProductLink href="">Светодиодные ленты</ProductLink>
-          <ProductLink href="">Настольные лампы</ProductLink>
+          <ProductLink href="#">Люстры</ProductLink>
+          <ProductLink href="#">Споты</ProductLink>
+          <ProductLink href="#">Светильники</ProductLink>
+          <ProductLink href="#">Трековые светильники</ProductLink>
+          <ProductLink href="#">Бра</ProductLink>
+          <ProductLink href="#">Уличные светильники</ProductLink>
+          <ProductLink href="#">Торшеры</ProductLink>
+          <ProductLink href="#">Технические светильники</ProductLink>
+          <ProductLink href="#">Комплектуюшие</ProductLink>
+          <ProductLink href="#">Светодиодные ленты</ProductLink>
+          <ProductLink href="#">Настольные лампы</ProductLink>
         </ProductsGrid>
       </FooterSectionThree>
     </FooterWrapper>
