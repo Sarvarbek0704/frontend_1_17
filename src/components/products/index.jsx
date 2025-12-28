@@ -1,8 +1,23 @@
 import React from "react";
-import "./products.css";
 import lyustra from "../../assets/lyustra.png";
-import { CartIcon } from "../icons";
+import { CartIcon, HeartIcon } from "../icons";
 import catalogIcon from "../../assets/catalog-icon.png";
+import {
+  ManageProductContainer,
+  ProductHeader,
+  ProductSubtitle,
+  AllProductsLink,
+  AllProductsButton,
+  ProductCardsContainer,
+  ProductCard,
+  ProductImage,
+  ProductTitle,
+  ProductCardFooter,
+  PriceContainer,
+  OldPrice,
+  NewPrice,
+  CartButton,
+} from "./Products.styled";
 import { Link } from "react-router-dom";
 
 function Products() {
@@ -14,33 +29,39 @@ function Products() {
   });
 
   return (
-    <div className="manage-product-container">
-      <div className="katalog-header">
-        <h2 className="katalog-subtitle">Популярные товары</h2>
-        <Link to="/all-products" className="item">
-          <button className="hammaKatalog">
+    <ManageProductContainer>
+      <ProductHeader>
+        <ProductSubtitle>Популярные товары</ProductSubtitle>
+        <AllProductsLink to="/all-products">
+          <AllProductsButton>
             Все товары <img src={catalogIcon} alt="catalogIcon" />
-          </button>
-        </Link>
-      </div>
-      <div className="product-cards">
+          </AllProductsButton>
+        </AllProductsLink>
+      </ProductHeader>
+      <ProductCardsContainer>
         {products.map((product, index) => (
-          <div className="product-card" key={index}>
-            <img src={product.image} alt={product.title} />
-            <p className="title">{product.title}</p>
-            <div className="product-card-footer">
-              <div className="narx">
-                <del>{product.oldPrice}</del>
-                <p>{product.newPrice}</p>
+          <Link to="/product-detail" className="link">
+            <ProductCard key={index}>
+              <div className="heart-icon">
+                <HeartIcon />
               </div>
-              <div className="buttons">
-                <CartIcon color="white" width="16" height="16" />
-              </div>
-            </div>
-          </div>
+
+              <ProductImage src={product.image} alt={product.title} />
+              <ProductTitle>{product.title}</ProductTitle>
+              <ProductCardFooter>
+                <PriceContainer>
+                  <OldPrice>{product.oldPrice}</OldPrice>
+                  <NewPrice>{product.newPrice}</NewPrice>
+                </PriceContainer>
+                <CartButton>
+                  <CartIcon color="white" width="12" height="16" />
+                </CartButton>
+              </ProductCardFooter>
+            </ProductCard>
+          </Link>
         ))}
-      </div>
-    </div>
+      </ProductCardsContainer>
+    </ManageProductContainer>
   );
 }
 

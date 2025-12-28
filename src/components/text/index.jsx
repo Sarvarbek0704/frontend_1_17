@@ -1,14 +1,20 @@
 import React from "react";
-import "./text.css";
+import {
+  TextContainer,
+  TextTitleContainer,
+  TextTitle,
+  TextParagraphContainer,
+  TextParagraph,
+} from "./Text.styled";
 
 function Text() {
   return (
-    <div className="text">
-      <div className="text-title">
-        <h1>Производство светильников</h1>
-      </div>
-      <div className="text-p">
-        <p>
+    <TextContainer>
+      <TextTitleContainer>
+        <TextTitle>Производство светильников</TextTitle>
+      </TextTitleContainer>
+      <TextParagraphContainer>
+        <TextParagraph>
           Интернет-магазин NORNLIGHT предлагает широкий ассортимент светильников
           для освещения вашего дома или офиса. У нас вы найдете разнообразные
           модели светильников, от современных и стильных до классических и
@@ -20,9 +26,9 @@ function Text() {
           чтобы каждый клиент мог насладиться прекрасным светом и удобством
           покупки онлайн. Обратитесь к нам сегодня и превратите ваш дом в оазис
           тепла и света с NORNLIGHT!
-        </p>
-      </div>
-    </div>
+        </TextParagraph>
+      </TextParagraphContainer>
+    </TextContainer>
   );
 }
 

@@ -1,5 +1,4 @@
 import React from "react";
-import "./katalog.css";
 import katalog1 from "../../assets/katalog1.png";
 import katalog2 from "../../assets/katalog2.png";
 import katalog3 from "../../assets/katalog3.png";
@@ -7,6 +6,21 @@ import katalog4 from "../../assets/katalog4.png";
 import katalog5 from "../../assets/katalog5.png";
 import katalog6 from "../../assets/katalog6.png";
 import catalogIcon from "../../assets/catalog-icon.png";
+import {
+  KatalogContainer,
+  KatalogHeader,
+  KatalogSubtitle,
+  KatalogMain,
+  CategoriesGrid,
+  CategoryCard,
+  CategoryContent,
+  CategoryText,
+  CategoryTitle,
+  CategoryLink,
+  CategoryIcon,
+  HammaKatalog,
+} from "./Katalog.styled";
+import { Link } from "react-router-dom";
 
 function Katalog() {
   const categories = [
@@ -16,25 +30,27 @@ function Katalog() {
       icon: katalog1,
     },
     {
-      title: "Торшеры",
+      title: "Светильники",
       link: "От 540₽ →",
       icon: katalog2,
     },
     {
-      title: "Светильники",
+      title: "Бра",
       link: "От 540₽ →",
       icon: katalog3,
     },
     {
-      title: "Настольные лампы",
+      title: "Торшеры",
       link: "От 540₽ →",
       icon: katalog4,
     },
+
     {
-      title: "Бра",
+      title: "Настольные лампы",
       link: "От 540₽ →",
       icon: katalog5,
     },
+
     {
       title: "Споты",
       link: "От 540₽ →",
@@ -43,34 +59,34 @@ function Katalog() {
   ];
 
   return (
-    <div className="katalog-container">
-      <div className="katalog-header">
-        <h2 className="katalog-subtitle">Каталог</h2>
-        <button className="hammaKatalog">
-          Весь каталог <img src={catalogIcon} alt="catalogIcon" />
-        </button>
-      </div>
+    <KatalogContainer>
+      <KatalogHeader>
+        <KatalogSubtitle>Каталог</KatalogSubtitle>
+        <HammaKatalog>
+          <Link to="/catalog" className="link">
+            Весь каталог <img src={catalogIcon} alt="catalogIcon" />
+          </Link>
+        </HammaKatalog>
+      </KatalogHeader>
 
-      <div className="katalog-main">
-        <div className="categories-grid">
+      <KatalogMain>
+        <CategoriesGrid>
           {categories.map((category, index) => (
-            <div key={index} className="category-card">
-              <div className="category-content">
-                <div className="category-text">
-                  <h3 className="category-title">{category.title}</h3>
-                  <a href="#" className="category-link">
-                    {category.link}
-                  </a>
-                </div>
-                <div className="category-icon">
+            <CategoryCard key={index}>
+              <CategoryContent>
+                <CategoryText>
+                  <CategoryTitle>{category.title}</CategoryTitle>
+                  <CategoryLink href="#">{category.link}</CategoryLink>
+                </CategoryText>
+                <CategoryIcon>
                   <img src={category.icon} alt={category.title} />
-                </div>
-              </div>
-            </div>
+                </CategoryIcon>
+              </CategoryContent>
+            </CategoryCard>
           ))}
-        </div>
-      </div>
-    </div>
+        </CategoriesGrid>
+      </KatalogMain>
+    </KatalogContainer>
   );
 }
 

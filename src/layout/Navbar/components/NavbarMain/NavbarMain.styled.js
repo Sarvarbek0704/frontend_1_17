@@ -25,6 +25,11 @@ export const SearchWrapper = styled.div`
   gap: 12px;
   align-items: center;
   width: 100%;
+  min-width: 300px;
+
+  span {
+    font-weight: 100;
+  }
 
   @media screen and (max-width: 1100px) {
     .catalog-button span {
@@ -39,6 +44,7 @@ export const SearchWrapper = styled.div`
   }
 
   .catalog-button {
+    flex-shrink: 0;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -60,6 +66,7 @@ export const SearchWrapper = styled.div`
     border: 1px solid ${bgColors.primary};
     border-radius: 100px;
     overflow: hidden;
+    flex: 1;
   }
 
   & input {
@@ -70,6 +77,10 @@ export const SearchWrapper = styled.div`
     border: none;
     outline: none;
     font-size: 16px;
+    min-width: 0;
+  }
+  & input::placeholder {
+    opacity: 40%;
   }
 
   .search-icon-wrap {
@@ -96,10 +107,29 @@ export const NavigationItems = styled.div`
     align-items: center;
     gap: 5px;
     cursor: pointer;
+    position: relative;
+    overflow: visible;
+
+    .cart-icon {
+      z-index: 2;
+    }
+    p {
+      color: white;
+      font-size: 12px;
+      padding: 3px 8px;
+      border-radius: 50%;
+      background-color: rgba(198, 60, 60, 1);
+      top: -10px;
+      right: 0;
+      position: absolute;
+      z-index: 1;
+      overflow: visible;
+    }
 
     span {
+      font-weight: 600;
       font-size: 12px;
-      color: ${textColors.secondary};
+      color: rgba(69, 69, 69, 1);
       white-space: nowrap;
     }
 

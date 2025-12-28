@@ -28,10 +28,6 @@ export const CustomNavLink = styled(NavLink)`
   text-decoration: none;
   color: ${textColors.secondary};
   white-space: nowrap;
-
-  &:hover {
-    color: ${textColors.primary};
-  }
 `;
 
 export const OrderPhoneButton = styled.button`
@@ -42,10 +38,6 @@ export const OrderPhoneButton = styled.button`
   color: ${textColors.secondary};
   cursor: pointer;
   white-space: nowrap;
-
-  &:hover {
-    color: ${textColors.primary};
-  }
 `;
 
 export const PhoneLink = styled.a`

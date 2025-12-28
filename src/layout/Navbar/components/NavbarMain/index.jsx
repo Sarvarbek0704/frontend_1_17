@@ -31,16 +31,20 @@ function NavbarMain() {
         </div>
       </SearchWrapper>
       <NavigationItems>
-        <div className="item">
-          <HeartIcon />
-          <span>Избранное</span>
-        </div>
+        <Link to="/favorites" className="item">
+          <div className="item">
+            <HeartIcon />
+            <span>Избранное</span>
+          </div>
+        </Link>
+
         <div className="item">
           <NetworkIcon />
           <span>Сравнение</span>
         </div>
         <Link to="/basket" className="item">
-          <CartIcon />
+          <CartIcon className="cart-icon" />
+          <p>1</p>
           <span>Корзина</span>
         </Link>
       </NavigationItems>

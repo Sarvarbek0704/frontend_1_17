@@ -1,7 +1,19 @@
 import React from "react";
-import "./style.css";
 import catalogIcon from "../../assets/catalog-icon.png";
 import { DostavkaIcon, MedalIcon, TangaIcon, YuklarIcon } from "../icons";
+import {
+  ReasonsContainer,
+  ReasonsHeader,
+  ReasonsTitle,
+  AboutButton,
+  CardsContainer,
+  Card,
+  IconWrapper,
+  CardText,
+  CardTitle,
+  CardDescription,
+} from "./Reason.styled";
+import { Link } from "react-router-dom";
 
 function Reasons() {
   const reasonsData = [
@@ -28,25 +40,27 @@ function Reasons() {
   ];
 
   return (
-    <div className="reasons">
-      <div className="reasonsHeader">
-        <h1>Почему NORNLIGHT?</h1>
-        <button className="hammaKatalog">
-          О компании <img src={catalogIcon} alt="catalogIcon" />
-        </button>
-      </div>
-      <div className="cards">
+    <ReasonsContainer>
+      <ReasonsHeader>
+        <ReasonsTitle>Почему NORNLIGHT?</ReasonsTitle>
+        <Link to="/about-us" className="link">
+          <AboutButton>
+            О компании <img src={catalogIcon} alt="catalogIcon" />
+          </AboutButton>
+        </Link>
+      </ReasonsHeader>
+      <CardsContainer>
         {reasonsData.map((reason, index) => (
-          <div className="card" key={index}>
-            <div className="icons">{reason.icon}</div>
-            <div className="card-text">
-              <h3>{reason.title}</h3>
-              <p>{reason.description}</p>
-            </div>
-          </div>
+          <Card key={index}>
+            <IconWrapper>{reason.icon}</IconWrapper>
+            <CardText>
+              <CardTitle>{reason.title}</CardTitle>
+              <CardDescription>{reason.description}</CardDescription>
+            </CardText>
+          </Card>
         ))}
-      </div>
-    </div>
+      </CardsContainer>
+    </ReasonsContainer>
   );
 }
 

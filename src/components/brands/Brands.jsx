@@ -2,8 +2,16 @@ import React from "react";
 import brand1 from "../../assets/brand1.png";
 import brand2 from "../../assets/brand2.png";
 import brand3 from "../../assets/brand3.png";
-import "./Brands.css";
 import { Strelka, Strelka2 } from "../icons";
+import {
+  BrandsContainer,
+  BrandsHeader,
+  BrandsTitle,
+  ArrowContainer,
+  BrandCardsContainer,
+  BrandCard,
+  BrandImage,
+} from "./Brands.styled";
 
 function Brands() {
   const brands = [
@@ -14,23 +22,23 @@ function Brands() {
   ];
 
   return (
-    <div className="brands">
-      <div className="brands-header">
-        <h1>Только проверенные бренды</h1>
-        <div className="strelka">
+    <BrandsContainer>
+      <BrandsHeader>
+        <BrandsTitle>Только проверенные бренды</BrandsTitle>
+        <ArrowContainer>
           <Strelka />
           <Strelka2 />
-        </div>
-      </div>
+        </ArrowContainer>
+      </BrandsHeader>
 
-      <div className="brand-cards">
+      <BrandCardsContainer>
         {brands.map((brand) => (
-          <div className="brand-card" key={brand.id}>
-            <img src={brand.image} alt={brand.alt} />
-          </div>
+          <BrandCard key={brand.id}>
+            <BrandImage src={brand.image} alt={brand.alt} />
+          </BrandCard>
         ))}
-      </div>
-    </div>
+      </BrandCardsContainer>
+    </BrandsContainer>
   );
 }
 

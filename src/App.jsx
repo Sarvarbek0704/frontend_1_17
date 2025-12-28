@@ -1,22 +1,38 @@
 import React from "react";
-import MainLayout from "./layout/MainLayout";
 import { Route, Routes } from "react-router-dom";
-import Basket from "./components/basket";
-import AllProducts from "./components/allProducts";
+import MainLayout from "./layout/MainLayout";
+import Products from "./pages/allProducts";
+import ProductDetail from "./pages/ProductDetail";
+import Basket from "./pages/basket";
+import AboutUs from "./pages/AboutUs";
+import DeliveryPayment from "./pages/DeliveryPayment";
+import Return from "./pages/Return";
+import Garant from "./pages/Garant";
+import Contacts from "./pages/Contacts";
+import Blog from "./pages/Blog";
+import Favorites from "./pages/Favorites";
+import NotFoundPage from "./pages/NotFoundPage";
+import Catalog from "./pages/Catalog";
 
 function App() {
   return (
     <Routes>
-      <Route
-        path="/"
-        element={
-          <MainLayout>
-            <h1>Hello World</h1>
-          </MainLayout>
-        }
-      />
+      <Route path="/" element={<MainLayout></MainLayout>} />
       <Route path="/basket" element={<Basket></Basket>} />
-      <Route path="/all-products" element={<AllProducts></AllProducts>} />
+      <Route path="/all-products" element={<Products></Products>} />
+      <Route path="/product-detail" element={<ProductDetail></ProductDetail>} />
+      <Route path="/about-us" element={<AboutUs></AboutUs>} />
+      <Route
+        path="/delivery-payment"
+        element={<DeliveryPayment></DeliveryPayment>}
+      />
+      <Route path="/return" element={<Return></Return>} />
+      <Route path="/garant" element={<Garant></Garant>} />
+      <Route path="/contacts" element={<Contacts></Contacts>} />
+      <Route path="/blog" element={<Blog></Blog>} />
+      <Route path="/favorites" element={<Favorites></Favorites>} />
+      <Route path="/catalog" element={<Catalog></Catalog>} />
+      <Route path="*" element={<NotFoundPage></NotFoundPage>} />
     </Routes>
   );
 }

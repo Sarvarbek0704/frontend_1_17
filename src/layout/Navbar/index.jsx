@@ -36,9 +36,6 @@ function Navbar() {
 
           <div className="mobile-icons">
             <button className="mobile-icon-btn">
-              <SearchIcon />
-            </button>
-            <button className="mobile-icon-btn">
               <HeartIcon />
             </button>
             <button className="mobile-icon-btn">
@@ -49,36 +46,25 @@ function Navbar() {
 
         <div ref={mobNavRef} className="mobile-opening-content">
           <div className="mobile-nav-header">
-            <h3>Меню</h3>
             <button onClick={handleOpen} className="close-btn">
               <CloseIcon />
             </button>
           </div>
 
-          <div className="mobile-search">
-            <div className="input-wrapper">
-              <input type="text" placeholder="Поиск по товарам" />
-              <span className="search-icon-wrap">
-                <SearchIcon />
-              </span>
-            </div>
-          </div>
-
-          <button className="mobile-catalog-btn">
-            <CatalogIcon />
-            <span>Каталог</span>
-          </button>
-
           <div className="mobile-links">
+            <a href="/about-us">О компании</a>
+            <a href="/delivery-payment">Доставка и оплата</a>
+            <a href="/return">Возврат</a>
+            <a href="/garant">Гарантии</a>
+            <a href="/contacts">Контакты</a>
+            <a href="/blog">Блог</a>
+            <button className="mobile-catalog-btn">
+              <CatalogIcon />
+              <span>Каталог</span>
+            </button>
             <a href="tel:88008904656" className="mobile-phone">
               <span>8 (800) 890-46-56</span>
             </a>
-            <a href="/">О компании</a>
-            <a href="/">Доставка и оплата</a>
-            <a href="/">Возврат</a>
-            <a href="/">Гарантии</a>
-            <a href="/">Контакты</a>
-            <a href="/">Блог</a>
             <button className="call-back-btn">Заказать звонок</button>
           </div>
         </div>

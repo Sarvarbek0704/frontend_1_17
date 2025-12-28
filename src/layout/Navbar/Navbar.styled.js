@@ -33,7 +33,7 @@ export const NavbarWrapper = styled.nav`
     padding: 20px;
     z-index: 1000;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-    max-height: 80vh;
+    max-height: 90vh;
     overflow-y: auto;
   }
 
@@ -89,25 +89,6 @@ export const NavbarWrapper = styled.nav`
     cursor: pointer;
   }
 
-  .mobile-search {
-    margin-bottom: 20px;
-  }
-
-  .mobile-search .input-wrapper {
-    border: 1px solid ${bgColors.primary};
-    border-radius: 100px;
-    overflow: hidden;
-  }
-
-  .mobile-search input {
-    width: 100%;
-    height: 45px;
-    padding: 10px 40px 10px 20px;
-    border: none;
-    outline: none;
-    font-size: 16px;
-  }
-
   .mobile-catalog-btn {
     display: flex;
     align-items: center;
@@ -126,12 +107,16 @@ export const NavbarWrapper = styled.nav`
   }
 
   .mobile-links {
+    text-align: center;
+    align-items: center;
     display: flex;
     flex-direction: column;
     gap: 15px;
   }
 
   .mobile-links a {
+    width: 100%;
+    border-bottom: 1px solid rgba(69, 69, 69, 0.1);
     text-decoration: none;
     color: ${textColors.secondary};
     font-size: 16px;
@@ -139,6 +124,8 @@ export const NavbarWrapper = styled.nav`
   }
 
   .mobile-phone {
+    border: none;
+    text-align: center;
     display: flex;
     align-items: center;
     gap: 10px;
@@ -147,11 +134,11 @@ export const NavbarWrapper = styled.nav`
   }
 
   .call-back-btn {
+    opacity: 50%;
+    border: none;
     background: none;
-    border: 1px solid ${bgColors.primary};
     color: ${bgColors.primary};
     padding: 12px;
-    border-radius: 100px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
