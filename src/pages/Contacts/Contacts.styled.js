@@ -204,8 +204,6 @@ export const FullWidthMap = styled.div`
     justify-content: space-between;
     gap: 30px;
 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-
     span {
       font-weight: 600;
       font-size: 24px;
@@ -230,12 +228,10 @@ export const FullWidthMap = styled.div`
       color: #fff;
       font-size: 14px;
       font-weight: 500;
-      cursor: pointer;
       white-space: nowrap;
     }
   }
 
-  /* ⬇️ RESPONSIVE: mapdan pastga tushadi */
   @media screen and (max-width: 1024px) {
     iframe {
       height: 350px;

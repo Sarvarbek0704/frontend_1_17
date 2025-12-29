@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 export const NotFoundWrapper = styled.div`
-  min-height: calc(100vh - 200px); /* Full height minus navbar/footer */
+  min-height: calc(100vh - 200px);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -140,9 +140,7 @@ export const HomeButton = styled.button`
   padding: 16px 40px;
   font-size: 16px;
   font-weight: 500;
-  cursor: pointer;
   margin-top: 10px;
-
 
   @media screen and (max-width: 768px) {
     padding: 14px 35px;

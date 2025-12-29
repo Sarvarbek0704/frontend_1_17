@@ -74,7 +74,6 @@ export const AboutButton = styled.button`
   color: rgba(69, 69, 69, 1);
   background: none;
   border: 1px solid rgba(69, 69, 69, 1);
-  cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   white-space: nowrap;

@@ -76,10 +76,6 @@ export const ArrowContainer = styled.div`
     width: 100%;
     justify-content: center;
   }
-
-  svg {
-    cursor: pointer;
-  }
 `;
 
 export const BrandCardsContainer = styled.div`
@@ -126,7 +122,7 @@ export const BrandCard = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid rgba(217, 217, 217, 1);
+  border: 1px solid rgba(217, 217, 217, 0.9);
   padding: 20px;
   background: white;
   height: 120px;

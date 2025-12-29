@@ -61,7 +61,6 @@ export const SearchWrapper = styled.div`
     font-size: 16px;
     font-weight: 600;
     white-space: nowrap;
-    cursor: pointer;
   }
 
   .input-wrapper {
@@ -91,7 +90,6 @@ export const SearchWrapper = styled.div`
     position: absolute;
     right: 24px;
     top: 14px;
-    cursor: pointer;
   }
 `;
 
@@ -110,7 +108,6 @@ export const NavigationItems = styled.div`
     flex-direction: column;
     align-items: center;
     gap: 5px;
-    cursor: pointer;
     position: relative;
     overflow: visible;
 

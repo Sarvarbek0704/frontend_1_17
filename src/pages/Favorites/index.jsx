@@ -45,9 +45,6 @@ function Favorites() {
           {products.map((product, index) => (
             <Link to="/product-detail" className="link">
               <ProductCard key={index}>
-                <div className="heart-icon">
-                  <HeartIcon />
-                </div>
                 <ProductImage src={product.image} alt={product.title} />
                 <ProductTitle>{product.title}</ProductTitle>
                 <ProductCardFooter>

@@ -104,7 +104,7 @@ export const LeftColumn = styled.div`
 
 export const RightColumn = styled.div`
   flex: 1;
-  padding-top: 15px; /* Chapdagi title bilan bir xil darajada bo'lishi uchun */
+  padding-top: 15px;
 
   @media screen and (max-width: 768px) {
     padding-top: 0;
@@ -247,7 +247,7 @@ export const FullWidthMap = styled.div`
   margin: 60px 0;
 
   iframe {
-    width: calc(100% - 120px); /* 60px + 60px */
+    width: calc(100% - 120px);
     max-width: 1600px;
     height: 450px;
     border-radius: 15px;

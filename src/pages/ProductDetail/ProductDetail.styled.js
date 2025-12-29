@@ -110,7 +110,6 @@ export const Thumbnail = styled.img`
   object-fit: cover;
   border: 1px solid rgba(221, 221, 221, 1);
   border-radius: 5px;
-  cursor: pointer;
 
   @media screen and (max-width: 375px) {
     width: 60px;
@@ -339,7 +338,6 @@ export const AddToCartButton = styled.button`
   padding: 0 45px;
   font-size: 16px;
   font-weight: 500;
-  cursor: pointer;
 
   @media screen and (max-width: 1440px) {
     padding: 0 35px;
@@ -361,7 +359,6 @@ export const HeartIconWrapper = styled.div`
   justify-content: center;
   border-radius: 10px;
   background-color: rgba(248, 248, 248, 1);
-  cursor: pointer;
   min-width: 60px;
 
   svg {

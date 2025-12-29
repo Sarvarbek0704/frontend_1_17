@@ -32,7 +32,6 @@ export const NavbarWrapper = styled.nav`
     background-color: white;
     padding: 20px;
     z-index: 1000;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     max-height: 90vh;
     overflow-y: auto;
   }
@@ -52,7 +51,6 @@ export const NavbarWrapper = styled.nav`
     background: none;
     border: none;
     padding: 8px;
-    cursor: pointer;
   }
 
   .mobile-logo {
@@ -70,7 +68,6 @@ export const NavbarWrapper = styled.nav`
     background: none;
     border: none;
     padding: 5px;
-    cursor: pointer;
   }
 
   .mobile-nav-header {
@@ -86,7 +83,6 @@ export const NavbarWrapper = styled.nav`
     background: none;
     border: none;
     padding: 5px;
-    cursor: pointer;
   }
 
   .mobile-catalog-btn {
@@ -103,7 +99,6 @@ export const NavbarWrapper = styled.nav`
     border-radius: 100px;
     font-size: 16px;
     font-weight: 600;
-    cursor: pointer;
   }
 
   .mobile-links {
@@ -141,7 +136,6 @@ export const NavbarWrapper = styled.nav`
     padding: 12px;
     font-size: 16px;
     font-weight: 600;
-    cursor: pointer;
     margin-top: 10px;
   }
 `;

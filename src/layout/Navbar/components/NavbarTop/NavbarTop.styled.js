@@ -36,7 +36,6 @@ export const OrderPhoneButton = styled.button`
   font-size: 14px;
   font-weight: 600;
   color: ${textColors.secondary};
-  cursor: pointer;
   white-space: nowrap;
 `;
 

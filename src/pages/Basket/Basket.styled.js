@@ -173,7 +173,6 @@ export const QuantityButton = styled.button`
   height: 25px;
   border: none;
   border-radius: 50%;
-  cursor: pointer;
   font-size: 16px;
   display: flex;
   align-items: center;
@@ -204,7 +203,6 @@ export const DeleteButton = styled.button`
   border: 1px solid rgba(217, 217, 217, 1);
   background: white;
   border-radius: 50%;
-  cursor: pointer;
   font-size: 18px;
   color: rgba(159, 159, 159, 1);
   display: flex;
@@ -292,7 +290,6 @@ export const MobileDeleteButton = styled.button`
   border: 1px solid rgba(217, 217, 217, 1);
   background: white;
   border-radius: 100px;
-  cursor: pointer;
   font-size: 14px;
   color: rgba(159, 159, 159, 1);
 `;
@@ -442,7 +439,6 @@ export const BuyButton = styled.button`
   border-radius: 100px;
   font-size: 18px;
   font-weight: 600;
-  cursor: pointer;
   margin: 20px 0;
 
   @media (max-width: 580px) {

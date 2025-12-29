@@ -26,10 +26,6 @@ export const BreadcrumbLink = styled.a`
   opacity: 40%;
   font-size: 14px;
 
-  &:hover {
-    opacity: 60%;
-  }
-
   @media screen and (max-width: 480px) {
     font-size: 12px;
   }

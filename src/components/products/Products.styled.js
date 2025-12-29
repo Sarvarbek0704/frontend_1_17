@@ -60,7 +60,6 @@ export const AllProductsButton = styled.button`
   color: rgba(69, 69, 69, 1);
   background: none;
   border: 1px solid rgba(69, 69, 69, 1);
-  cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   white-space: nowrap;
@@ -283,7 +282,6 @@ export const CartButton = styled.div`
   background-color: rgba(69, 69, 69, 1);
   padding: 7px 14px;
   border-radius: 20px;
-  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;

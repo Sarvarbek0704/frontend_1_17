@@ -44,7 +44,6 @@ import {
 const ProductDetail = () => {
   const [selectedImage, setSelectedImage] = useState(lyustra);
 
-  // Faqat mobileda ko'rinadigan 4ta rasm
   const productImages = [lyustra, lyustra, lyustra, lyustra];
 
   return (

@@ -104,7 +104,6 @@ export const BlogButton = styled.button`
   color: rgba(69, 69, 69, 1);
   background: none;
   border: 1px solid rgba(69, 69, 69, 1);
-  cursor: pointer;
   font-size: 16px;
   font-weight: 500;
   white-space: nowrap;
@@ -272,7 +271,6 @@ export const BlogCardDate = styled.p`
 
 export const ArrowIcon = styled.div`
   flex-shrink: 0;
-  cursor: pointer;
 
   @media screen and (max-width: 375px) {
     svg {
